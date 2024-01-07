@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Personal Info</title>
+  <style>
+    /* 初始樣式 */
+    #selfie {
+      border: 2px solid black; /* 黑色邊框 */
+      border-radius: 50%; /* 圓角 */
+    }
+  </style>
+</head>
+<body>
+  <h1 id="studentID">學號:91018109</h1>
+  <h1 id="studentName">姓名:張巍瀚</h1>
+  <img id="selfie" src="https://lh3.googleusercontent.com/pw/ABLVV87k8GpXqpP4i7h_LkgPhNO9FNExiYwrERcpUh7xjaeMf9OvtrZO65YjZq-8V6nyfKcl4J0C6JgB2CUqWGqxmSLIp94fQWYjMxDYVW-0hD31OntBi1tlMu7HtWJKhGVvowhosapwZORw-9C4Ac9H2CYG-w=w722-h962-s-no-gm?authuser=0" alt="Your Selfie">
+  
+  <button onclick="changeTextStyles()">調整文字樣式</button>
+  <button onclick="changeImageStyles()">調整大頭照樣式</button>
+  
+  <script>
+    function changeTextStyles() {
+      var studentID = document.getElementById('studentID');
+      var studentName = document.getElementById('studentName');
+      
+      studentID.style.color = 'pink'; /* 將文字顏色設為藍色 */
+      studentName.style.color = 'Green';
+      studentID.style.fontSize = '24px';
+      studentName.style.fontSize = '48px'; /* 設置文字大小 */
+    }
+
+    function changeImageStyles() {
+      var selfie = document.getElementById('selfie');
+      
+      selfie.style.border = '4px solid red'; /* 紅色粗框 */
+      selfie.style.borderRadius = '10%'; /* 更小的圓角 */
+       selfie.style.width = '100px';
+       selfie.style.height = '100px';
+    }
+  </script>
+</body>
+</html>
